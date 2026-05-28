@@ -20,3 +20,68 @@ TECHNOLOGIES
 
 SETUP
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+## 1. DOWNLOADING THE LC‑3 SIMULATOR
+
+You have two main options for running LC‑3 assembly code:
+
+### Option A: LC‑3 Simulator (Desktop Application) – Recommended
+
+Step 1: Download the Simulator**
+- Go to the official LC‑3 homepage:  
+  `https://highered.mheducation.com/sites/0072467509/student_view0/lc-3_simulator.html`
+- Download the version for your operating system:
+  - Windows: `LC3Win.zip`
+  - macOS / Linux: Java version `LC3Java.zip`
+
+Step 2: Install the Simulator**
+- Windows: Extract `LC3Win.zip` and run `LC3Win.exe`
+- macOS / Linux: 
+  - Extract `LC3Java.zip`
+  - Make sure you have Java installed (check with `java -version` in terminal)
+  - Run: `java -jar LC3Java.jar`
+
+### Option B: LC‑3 Web Simulator (No Installation)
+- Go to: `https://lc3sim.github.io/web/` or `https://wchargin.com/lc3web/`
+- Works in any browser – good for quick testing, but feature-limited
+
+## 2. GETTING THE BUBBLE SORT CODE
+
+Clone this repository (if using Git)
+```bash
+git clone https://github.com/YOUR_USERNAME/BubbleSortGroupProject.git
+cd BubbleSortGroupProject
+
+
+Extract the zip file and open the program.
+
+### Step 2: Open the Assembly File
+
+1. In the LC‑3 Simulator, click **File → Open**
+2. Change file type to `*.asm` (Assembly files)
+3. Select `bubblesort.asm`
+4. Click **Assemble** (or press `F5` on your keyboard)
+You should see: `"Assembly completed successfully"` at the bottom
+
+
+## Step 3: Set the Starting Point
+
+The program starts at memory address `x3000`.
+- Look for a box labeled **"Set PC"** or **"PC"**
+- Type: `x3000`
+- Press Enter
+
+### Step 4: Run the Program
+Click the 'Run' button (or press `F5`)
+
+Information should start to fill out in the console window next to the simulator.
+
+### Step 5: Enter the 8 Numbers
+
+When prompted, type each number and press **Enter**:
+2 3 6 8 11 17 21
+
+**Rules:**
+- Numbers must be between **0 and 100**
+- No decimals or letters
+- If you type an invalid number, the program will ask you to re-enter
+
